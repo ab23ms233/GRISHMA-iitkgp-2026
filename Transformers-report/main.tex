@@ -1,0 +1,95 @@
+\documentclass{report}
+\usepackage[lmargin=1in, rmargin=0.5in, tmargin=1in, bmargin=1in]{geometry}
+
+\usepackage[english]{babel}
+\addto\captionsenglish{\renewcommand{\bibname}{References}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{fontspec}
+\newfontfamily\devanagarifont{Noto Sans Devanagari}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+% \renewcommand{\bibname}{References}
+
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+
+% \includeonly{Chapters/inference}
+
+% Your document starts here!
+\begin{document}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% TITLE PAGE
+\begin{titlepage}
+\centering
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\vspace*{1cm}
+
+\HRule \\[0.8cm]
+{\huge \bfseries A Deep Dive into the World of Transformers}\\[0.4cm]
+\HRule \\[1.5cm]
+
+{\large \textbf{Presented by}}\\[0.3cm]
+{\Large Arya Basak}\\[0.2cm]
+{\large IISER Kolkata}\\[1.5cm]
+
+{\large \textbf{Submitted to}}\\[0.8cm]
+
+\begin{tabular}{cc}
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        {\large Dr. Kripabandhu Ghosh}\\[0.2cm]
+        {\large IISER Kolkata}\\[0.4cm]
+        \includegraphics[width=0.35\textwidth]{iiserk-logo.jpg}
+    \end{minipage}
+    &
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        {\large Dr. Saptarshi Ghosh}\\[0.2cm]
+        {\large IIT Kharagpur}\\[0.4cm]
+        \includegraphics[width=0.35\textwidth]{iit-kgp-logo.png}
+    \end{minipage}
+\end{tabular}
+
+\vfill
+
+{\large \today}
+
+\end{titlepage}
+
+\tableofcontents
+
+\include{Chapters/introduction}
+\include{Chapters/overview}
+\include{Chapters/self-attention}
+\include{Chapters/positional-encoding}
+\include{Chapters/layer-normalization}
+\include{Chapters/encoder}
+\include{Chapters/masked-attention}
+\include{Chapters/cross-attention}
+\include{Chapters/decoder-training}
+\include{Chapters/inference}
+\include{Chapters/conclusion}
+\include{Chapters/references}
+
+\end{document}

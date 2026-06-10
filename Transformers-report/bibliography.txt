@@ -1,0 +1,6 @@
+https://medium.com/thedeephub/positional-encoding-explained-a-deep-dive-into-transformer-pe-65cfe8cfe10b
+https://medium.com/@sachinsoni600517/layer-normalization-in-transformer-1a2efbff8b85
+https://blog.timodenk.com/linear-relationships-in-the-transformers-positional-encoding/
+https://medium.com/@punya8147_26846/understanding-feed-forward-networks-in-transformers-77f4c1095c67
+https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+https://jalammar.github.io/illustrated-transformer/
